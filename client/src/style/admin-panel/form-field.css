@@ -1,0 +1,85 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field-input {
+  border-radius: 5px;
+  min-width: 15vw;
+  min-height: 5vh;
+  margin-right: 15px;
+  color: #fcfbfc;
+  background-color: #404040;
+  border: 2px solid #1b1b1b;
+  box-shadow: 4px 4px 0px 0px #1b1b1b;
+}
+
+.form-field-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.form-field-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.form-field-upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.form-field-upload {
+  min-width: 25vw;
+  background-color: #404040;
+  color: #fcfbfc;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #1b1b1b;
+  box-shadow: 4px 4px 0px 0px #1b1b1b;
+}
+
+.form-field-submit-button {
+  display: flex;
+  justify-content: center;
+}
+
+.form-field-text-area {
+  resize: none;
+}
+
+.form-field-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-field-input-icon {
+  position: absolute;
+  max-width: 1.5vw;
+  left: 81%;
+  top: 20%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(30%) saturate(321%)
+    hue-rotate(206deg) brightness(103%) contrast(96%);
+}
+
+.form-field-input-icon:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(30%) saturate(321%)
+    hue-rotate(206deg) brightness(70%) contrast(96%);
+}
+
+.form-field-input::placeholder {
+  color: #fcfbfc90;
+}
+
+.form-field-input::placeholder:focus {
+  color: transparent;
+}

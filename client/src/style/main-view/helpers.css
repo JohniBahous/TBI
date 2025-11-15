@@ -1,0 +1,21 @@
+.helpers-element {
+  margin: 5px;
+}
+
+.helpers-container {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.helpers-slider-parent {
+  position: relative;
+}
+.helpers-slider {
+  position: absolute;
+  right: 10px;
+}

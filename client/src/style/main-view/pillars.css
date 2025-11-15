@@ -1,0 +1,121 @@
+.pillars {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  background-color: #c2fe0c;
+  border-top: 2px solid #1a1a1a;
+  flex-grow: 3;
+}
+
+.pillars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #1a1a1a;
+  border-radius: 5%;
+  background-color: #c2fe0c;
+  flex: 1;
+}
+
+.pillars-icon {
+  min-width: 15vw;
+}
+
+.pillars-artist-bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.pillars-artist-portrait {
+  min-width: 20vw;
+}
+
+.pillars-artist-name,
+.pillars-song-name {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: clamp(1rem, 5vh, 4rem);
+  font-weight: bolder;
+}
+
+.pillars-test {
+  flex: 1;
+}
+.pillars-content {
+  display: grid;
+  flex: 1;
+  min-height: 60vh;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #1a1a1a;
+}
+
+.pillars-labels {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #1a1a1a;
+  color: #c2fe0c;
+  height: 10vh;
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2vw;
+}
+
+.label-start {
+  background-color: #c2fe0c;
+  color: #1a1a1a;
+}
+
+.pillars-volume-slider {
+  display: grid;
+  position: relative;
+}
+.pillars-volume-slider-front,
+.pillars-volume-slider-back {
+  grid-column: 1;
+  grid-row: 1;
+}
+.pillars-volume-slider-back {
+  grid-column: 1;
+  grid-row: 1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: clamp(1rem, 3vw, 4rem);
+  background-color: #1a1a1a;
+  color: #c2fe0c;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pillars-volume-slider-front {
+  grid-column: 1;
+  grid-row: 1;
+  position: absolute;
+  top: 47%;
+  left: 23%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.label-icon {
+  width: 50px;
+  filter: var(--filter-green, transparent);
+}

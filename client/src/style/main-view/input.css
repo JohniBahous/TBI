@@ -1,0 +1,29 @@
+.input {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: none;
+  border: none;
+}
+
+.input-light {
+  background-color: #fcfbfc;
+  color: #1b1b1b;
+}
+
+.input-dark {
+  background-color: #1b1b1b;
+  color: #fcfbfc;
+}
+
+.input-light::placeholder {
+  color: #1b1b1b;
+}
+
+.input-dark::placeholder {
+  color: #ff0099;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}

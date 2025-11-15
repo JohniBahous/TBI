@@ -1,0 +1,31 @@
+.snippet-row {
+  display: flex;
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.snippet-row-content {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  width: 100%;
+  min-height: 20vh;
+}
+
+.snippet-row-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1a1a1a;
+  background-color: #c2fe0c;
+  color: #1a1a1a;
+}
+
+.snippet-row-element-background-black {
+  background-color: #1a1a1a;
+}
+
+.snippet-row-element-background-green {
+  background-color: #c2fe0c;
+}

@@ -1,0 +1,49 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  min-width: 75vw;
+  min-height: 75vh;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  border: #1b1b1b 2px solid;
+  box-shadow: 4px 4px 0px 0px #1b1b1b;
+}
+
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 25vw;
+  min-height: 75vh;
+  border-right: 2px solid #1b1b1b;
+}
+.dashboard-left-adminInfo {
+  padding: 5px;
+}
+
+.dashboard-left-buttonField,
+.dashboard-left-adminInfo {
+  width: 100%;
+  box-sizing: border-box;
+}
+.dashboard-right {
+  min-width: 50vw;
+  min-height: 75vh;
+}
+
+.dashboard-addendum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5vw;
+  min-height: 75vh;
+  background-color: #d9d9d9;
+  writing-mode: sideways-lr;
+  border-right: 2px solid #1b1b1b;
+  font-size: clamp(1rem, 10vw, 5rem);
+  font-weight: bold;
+}
+
+.dashboard-icon {
+  max-width: 1.5vw;
+}

@@ -1,0 +1,32 @@
+.overview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #7f7f7f;
+  border: 1px solid #1b1b1b;
+  min-width: 100%;
+  min-height: 25vh;
+  font-weight: bold;
+}
+
+.overview-card:hover {
+  background-color: #404040;
+  color: #fcfbfc;
+}
+
+.overview-card-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overview-card-bottom-counters {
+  display: flex;
+  flex-direction: row;
+}

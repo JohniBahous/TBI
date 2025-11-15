@@ -1,0 +1,92 @@
+.villain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ff0099;
+  color: #1b1b1b;
+  /* border-radius: 30% 20% 0 0; */
+}
+
+.villain-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.villain-title-right {
+  background-color: #1a1a1a;
+  color: #ff0099;
+  margin-top: 10px;
+  font-family: "Monobloco";
+}
+
+.villain-title-left {
+  background-color: #ff0099;
+  color: #1b1b1b;
+  font-family: "Monobloco";
+}
+
+.villain-body {
+  display: flex;
+  flex-direction: row;
+}
+.villain-body-left {
+  font-size: 28px;
+  flex: 1;
+  min-width: 450px;
+  margin: 2px;
+}
+
+.villain-body-middle {
+  display: flex;
+  background-color: #ff0099;
+  color: #1b1b1b;
+  -webkit-text-stroke: 2px #1b1b1b;
+  -webkit-text-fill-color: #ff0099;
+  max-width: 550px;
+}
+
+.villain-body-right {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  max-width: 350px;
+  font-family: "Monobloco";
+}
+.villain-body-right-text {
+  margin: -5rem;
+  background-color: #1b1b1b;
+  color: #ff0099;
+  font-weight: 700;
+  font-size: clamp(2rem, 10vw, 8rem);
+}
+
+.villain-title-right,
+.villain-title-left,
+.villain-body-middle {
+  font-size: clamp(1.5rem, 8vw, 6.5rem);
+}
+
+.villain-eot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-family: "Monobloco";
+  padding-bottom: 35px;
+}
+
+.villain-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.villain-left {
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.villain-left-grid {
+  height: 25vh;
+}

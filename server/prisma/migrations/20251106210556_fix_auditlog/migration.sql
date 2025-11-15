@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "public"."audit" ALTER COLUMN "timeStamp" SET DEFAULT CURRENT_TIMESTAMP;

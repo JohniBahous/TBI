@@ -1,0 +1,28 @@
+.footer {
+  position: static;
+  bottom: 0;
+  height: 55px;
+  width: 100%;
+  background-color: #ff0099;
+  color: #1b1b1b;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer-element-icon {
+  width: 25px;
+}
+
+.footer-disclaimer {
+  background-color: #1b1b1b;
+  color: #ff0099;
+}

@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model artist {
+  uuid        String  @id @default(uuid())
+  fullName    String
+  stageName   String
+  bioFull     String
+  s3Key       String
+  song        song? @relation("ArtistSong")
+  isActive    Boolean  @default(true)
+  isArchived  Boolean  @default(false)
+}
+
+model song {
+  uuid        String  @id @default(uuid())
+  title       String
+  genre       String
+  bpm         Int
+  yor         Int
+  s3Key       String
+  songPlays   Int?     @default(0)
+  snippetPlays Int?    @default(0)
+  isActive    Boolean  @default(true)
+  isArchived  Boolean  @default(false)
+  artistUuid  String   @unique
+  artist      artist @relation("ArtistSong", fields: [artistUuid], references: [uuid])
+}
+
+model admin {
+  uuid        String  @id @default(uuid())
+  name        String
+  hashedPassword String
+  role        Role    @default(ADMIN)
+
+}
+
+model audit {
+  id          Int      @id @default(autoincrement())
+  adminUuid   String
+  adminName   String
+  timeStamp   DateTime @default(now())
+  action      String
+}
+
+enum Role {
+  ADMIN
+  SUPERADMIN
+}

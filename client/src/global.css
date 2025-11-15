@@ -1,0 +1,158 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  background-color: #555252;
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Auch";
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure text areas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+@font-face {
+  font-family: "Exan";
+  src: url(./fonts/Exan-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Auch";
+  src: url(./fonts/Auch.otf);
+}
+
+@font-face {
+  font-family: "Monobloco";
+  src: url(./fonts/Monobloco.otf);
+}
+
+input:focus {
+  outline: none;
+}
+
+.input[type="text"] {
+  box-shadow: none;
+  border: none;
+  background-color: #1b1b1b;
+  color: #fcfbfc;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  background-color: #1b1b1b;
+  color: #fcfbfc;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 13vw;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:root {
+  --filter-green: invert(94%) sepia(28%) saturate(6942%) hue-rotate(21deg)
+    brightness(116%) contrast(99%);
+  --filter-blue: invert(11%) sepia(99%) saturate(5591%) hue-rotate(262deg)
+    brightness(95%) contrast(133%);
+  --filter-pink: invert(17%) sepia(91%) saturate(5828%) hue-rotate(317deg)
+    brightness(103%) contrast(110%);
+  --filter-black: invert(0%) sepia(13%) saturate(488%) hue-rotate(342deg)
+    brightness(93%) contrast(80%);
+  --filter-white: invert(100%) sepia(100%) saturate(38%) hue-rotate(321deg)
+    brightness(110%) contrast(110%);
+}

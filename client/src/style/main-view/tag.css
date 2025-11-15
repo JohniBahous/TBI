@@ -1,0 +1,38 @@
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 3vw;
+  background-color: var(--tag-background-color);
+  margin: 5px;
+}
+
+.tag-content {
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  color: var(--tag-content-color);
+}
+
+.tag-green {
+  --tag-background-color: #c2fe0c;
+  --tag-content-color: #1b1b1b;
+}
+
+.tag-pink {
+  --tag-background-color: #ff0099;
+  --tag-content-color: #1b1b1b;
+}
+
+.tag-blue {
+  --tag-background-color: #5200ff;
+  --tag-content-color: #fcfbfc;
+}
+
+.tag-black {
+  --tag-background-color: #1b1b1b;
+  --tag-content-color: #fcfbfc;
+}
+
+.tag-white {
+  --tag-background-color: #fcfbfc;
+  --tag-content-color: #1b1b1b;
+}

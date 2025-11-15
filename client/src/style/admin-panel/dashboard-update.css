@@ -1,0 +1,38 @@
+.dashboard-update {
+  min-height: 75vh;
+  position: relative;
+}
+
+.dashboard-update-select-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 15px 0px 15px 15px;
+  min-height: 10vh;
+  border-bottom: 2px solid #1b1b1b;
+}
+
+.dashboard-update-select-item {
+  padding-right: 15px;
+}
+
+.dashboard-update-select {
+  outline: none;
+  background-color: #7f7f7f;
+  min-width: 15vw;
+  min-height: 5vh;
+  border-radius: 5px;
+  border: 2px solid #1b1b1b;
+  box-shadow: 4px 4px 0px 0px #1b1b1b;
+}
+
+.dashboard-update-select:after {
+  background-color: #404040;
+  color: #fcfbfc;
+}
+
+.dashboard-update-save-button {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vh;
+}

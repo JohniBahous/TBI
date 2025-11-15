@@ -1,0 +1,87 @@
+.admin-login {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #c2fe0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+  min-width: 50vw;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  border: #1b1b1b 2px solid;
+  box-shadow: 4px 4px 0px 0px #1b1b1b;
+}
+
+.admin-login-container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  min-width: 20vw;
+  background-color: #7f7f7f;
+  border-radius: 5px;
+  border: #1b1b1b 2px solid;
+  box-shadow: 4px 4px 0px 0px #1b1b1b;
+  transition: opacity 500ms;
+}
+
+.admin-login-container-item-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #404040;
+  color: #fcfbfc;
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.admin-login-container-item-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d9;
+  width: 100%;
+  font-size: 22px;
+}
+
+.admin-login-container-item-input {
+  padding: 15px 0px 15px 15px;
+}
+
+.admin-login-addendum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5vw;
+  min-height: 75vh;
+  background-color: #d9d9d9;
+  writing-mode: sideways-lr;
+  border-right: 2px solid #1b1b1b;
+  font-size: clamp(1rem, 10vw, 5rem);
+  font-weight: bold;
+}
+
+.admin-login-container-item-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 75vh;
+  width: 100%;
+  background-image: url("../../assets/icons/harp.svg");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+.admin-login-container-item-set:hover .admin-login-container-item:not(:hover) {
+  opacity: 0.3;
+}

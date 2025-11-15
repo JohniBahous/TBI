@@ -1,0 +1,152 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.button-small {
+  width: 50px;
+  height: 50px;
+}
+
+.button-small-icon {
+  width: 30px;
+}
+.button-medium {
+  width: 75px;
+  height: 75px;
+}
+
+.button-medium-icon {
+  width: 50px;
+}
+.button-big {
+  width: 100px;
+  height: 100px;
+}
+
+.button-big-icon {
+  width: 75px;
+}
+
+.button-background-pink {
+  --button-border-color: #ff0099;
+  --button-background-color: #1b1b1b;
+}
+.button-background-blue {
+  --button-border-color: #5200ff;
+  --button-background-color: #fcfbfc;
+}
+.button-background-green {
+  --button-border-color: #c2fe0c;
+  --button-background-color: #1b1b1b;
+}
+
+.button-variant-helper {
+  transform: rotate(-20deg);
+  background-color: var(--button-background-color, transparent);
+}
+
+.button-back-layer-helper {
+  width: 50px;
+  height: 50px;
+  transform: rotate(-20deg);
+  z-index: 2;
+  background-color: var(--button-border-color, transparent);
+}
+
+.button-variant-snippet {
+  border: 1px solid var(--button-border-color, transparent);
+}
+
+.button-back-layer-snippet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+  width: 65px;
+  height: 65px;
+  background-color: #fcfbfc;
+  background: linear-gradient(to right, #5200ff 50%, #fcfbfc 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.1s ease;
+}
+.button-back-layer-snippet:before {
+  opacity: 0.1;
+}
+.button-back-layer-snippet:hover {
+  background-position: center bottom;
+}
+.button-back-layer-snippet:active {
+  background-position: left bottom;
+}
+
+.button-outline {
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--button-border-color, transparent);
+}
+
+.button-background-invisible {
+  background-color: transparent;
+}
+
+.button-fill-green {
+  filter: var(--filter-green, transparent); /* Green #c2fe0c */
+}
+
+.button-fill-blue {
+  filter: var(--filter-blue, transparent); /* Blue #5200ff */
+}
+
+.button-fill-pink {
+  filter: var(--filter-pink, transparent); /* Pink #ff0099 */
+}
+
+.button-fill-black {
+  filter: var(--filter-black, transparent); /* Black #1b1b1b */
+}
+
+.button-fill-white {
+  filter: var(--filter-white, transparent); /* White #fcfbfc */
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button-variant-helper:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(20deg);
+}
+
+.button:active {
+  transform: scale(1.1);
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: none;
+}
+
+.button-outline:hover,
+.button-outline:focus,
+.button-outline:focus-visible {
+  border-color: var(--button-border-color, transparent);
+  outline: none;
+}
+
+.button-disabled {
+  filter: var(--filter-white, transparent);
+}
+
+.button-disabled:hover {
+  cursor: not-allowed;
+}
+.button-disabled:active {
+  transform: none;
+}

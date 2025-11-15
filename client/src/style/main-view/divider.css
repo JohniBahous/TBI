@@ -1,0 +1,29 @@
+.divider {
+  background-color: #5200ff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+.divider-bottom {
+  width: 100%;
+}
+.divider-bottom-svg {
+  width: 100%;
+}
+
+.divider-top {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 5px;
+  margin-bottom: -2vw;
+}
+
+.divider-top-svg {
+  width: 10vw;
+  padding-right: 5px;
+  filter: var(--filter-white, transparent);
+}

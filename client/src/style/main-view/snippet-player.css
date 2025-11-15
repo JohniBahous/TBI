@@ -1,0 +1,108 @@
+.snippet-player {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  padding: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #5200ff;
+  color: #f4f0da;
+  background-image: url("../../assets/icons/bbg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.snippet-player-text-container {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.snippet-player-song-title {
+  color: #f4f0da;
+  background-color: #5200ff;
+  border-radius: 20% 20% 0 0;
+  font-size: clamp(2rem, 2vw, 4rem);
+  font-weight: bolder;
+}
+
+.snippet-player-artist-name {
+  background-color: #f4f0da;
+  border-radius: 0 0 20% 20%;
+  color: #5200ff;
+  font-size: clamp(2rem, 1vw, 4rem);
+}
+
+.snippet-player-button {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+}
+
+.snippet-player-button-other {
+  grid-column: 3;
+  grid-row: 3;
+}
+.snippet-player-tag {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.snippet-player:hover {
+  z-index: 2;
+  transform: scale(1.25);
+  transition: transform 0.3s ease;
+}
+
+.snippet-player:hover .hide-stuff {
+  opacity: 1;
+}
+
+.hide-stuff {
+  opacity: 0;
+}
+
+.snippet-player[data-key="1"] {
+  border-radius: 0 0 30% 0;
+}
+
+.snippet-player[data-key="2"] {
+  border-radius: 0 0 30% 30%;
+}
+
+.snippet-player[data-key="3"] {
+  border-radius: 0 0 0 30%;
+}
+
+.snippet-player[data-key="4"] {
+  border-radius: 0 30% 30% 0;
+}
+
+.snippet-player[data-key="5"] {
+  border-radius: 30% 30% 30% 30%;
+}
+
+.snippet-player[data-key="6"] {
+  border-radius: 30% 0 0 30%;
+}
+
+.snippet-player[data-key="7"] {
+  border-radius: 0 30% 0 0;
+}
+
+.snippet-player[data-key="8"] {
+  border-radius: 30% 30% 0 0;
+}
+
+.snippet-player[data-key="9"] {
+  border-radius: 30% 0 0 0;
+}

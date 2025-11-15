@@ -1,0 +1,173 @@
+[
+  {
+    "fullName": "AMY MARSH",
+    "stageName": "AMY MARSH",
+    "bioFull": "Bio A",
+    "s3Key": "AM_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "RIPPED JEANS",
+        "genre": "POP",
+        "yor": 2025,
+        "bpm": 170,
+        "s3Key": "Acoustic_Guitar-pop.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "KOGA AYA",
+    "stageName": "KOGA",
+    "bioFull": "Bio B",
+    "s3Key": "KA_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "GREEN",
+        "genre": "ALT ROCK",
+        "yor": 2025,
+        "bpm": 158,
+        "s3Key": "Be_A_Good_Punk-indierock.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "PAUL BEE",
+    "stageName": "PAULIE",
+    "bioFull": "Bio C",
+    "s3Key": "PB_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "CYCLES",
+        "genre": "R&B",
+        "yor": 2025,
+        "bpm": 173,
+        "s3Key": "You_Know_Why-pop.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "MARCO ALEJANDRO",
+    "stageName": "MARCO ALEJANDRO",
+    "bioFull": "Bio D",
+    "s3Key": "MA_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "FICCION",
+        "genre": "REGGAETON",
+        "yor": 2023,
+        "bpm": 100,
+        "s3Key": "Baila_Conmigo-reggaeton.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "CHUCK ROGERS & TRAVIS JOHNSON",
+    "stageName": "C.R.A.Z.Y.",
+    "bioFull": "Bio E",
+    "s3Key": "CRAZY_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "ALL NIGHT LONG",
+        "genre": "HOUSE",
+        "yor": 2024,
+        "bpm": 115,
+        "s3Key": "Tropical-house.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "ALFIE SIMMIONS",
+    "stageName": "ALFIE SIMMIONS",
+    "bioFull": "Bio F",
+    "s3Key": "AS_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "OVERDRIVE",
+        "genre": "DNB",
+        "yor": 2023,
+        "bpm": 87,
+        "s3Key": "Jungle-dnb.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "SM GUEYE",
+    "stageName": "106",
+    "bioFull": "Bio G",
+    "s3Key": "SMG_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "DE NIRO",
+        "genre": "LUCID POP",
+        "yor": 2022,
+        "bpm": 120,
+        "s3Key": "Stardust-lucidpop.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "LUDIWIG FRIEDL",
+    "stageName": "LUDI",
+    "bioFull": "Bio H",
+    "s3Key": "LF_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "FRESH",
+        "genre": "HIP-HOP",
+        "yor": 2022,
+        "bpm": 128,
+        "s3Key": "Higher-chillhop.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  },
+  {
+    "fullName": "DREW BENSON",
+    "stageName": "DREW BENSON",
+    "bioFull": "Bio I",
+    "s3Key": "DB_Portrait.svg",
+    "isActive": true,
+    "isArchived": false,
+    "song": [
+      {
+        "title": "ABOUT RIGHT",
+        "genre": "EDM",
+        "yor": 2024,
+        "bpm": 148,
+        "s3Key": "Spacesynth-edm.mp3",
+        "isActive": true,
+        "isArchived": false
+      }
+    ]
+  }
+]

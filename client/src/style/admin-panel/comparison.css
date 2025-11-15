@@ -1,0 +1,26 @@
+.comparison-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.comparison-container {
+  min-height: 25vh;
+  min-width: 25vw;
+  padding: 15px;
+  margin: 15px;
+  background-color: #7f7f7f;
+}
+
+.comparison-content {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.comparison-content-title {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.comparison-content-divider {
+  border: 1px solid #1b1b1b;
+}

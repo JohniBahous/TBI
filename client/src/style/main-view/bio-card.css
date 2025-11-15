@@ -1,0 +1,51 @@
+.bio-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-height: 50vh;
+  max-width: 50vw;
+  background-color: #5200ff;
+}
+
+.bio-card-left .bio-card-right {
+  display: flex;
+  flex-direction: column;
+}
+.bio-card-title {
+  display: flex;
+  justify-content: end;
+  background-color: #fcfbfc;
+  color: #5200ff;
+  font-weight: 700;
+  font-size: clamp(1rem, 10vw, 5rem);
+}
+.bio-card-sub-title {
+  -webkit-text-stroke: 1px #fcfbfc;
+  -webkit-text-fill-color: #5200ff;
+  font-size: clamp(0.5rem, 10vw, 2.5rem);
+}
+.bio-card-text-body {
+  font-size: large;
+  flex: 1;
+  max-width: 50vw;
+  color: #fcfbfc;
+}
+.bio-card-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfbfc;
+  flex-direction: column;
+}
+
+.bio-card-portrait-container .bio-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-card-portrait {
+  filter: var(--filter-blue, transparent);
+  will-change: transform, opacity;
+  pointer-events: none; /* avoid interaction */
+}
