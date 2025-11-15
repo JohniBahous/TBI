@@ -335,29 +335,27 @@ app.put('/admin/:uuid/login', async (req, res) => {
       where: { uuid }
     });
 
-    // admin not found
     if (!admin) {
       return res.status(404).json({ success: false, message: "Admin not found" });
     }
 
-    // password check
     const isMatched = await bcrypt.compare(password, admin.hashedPassword);
 
     if (!isMatched) {
       return res.status(401).json({ success: false, message: "Incorrect password" });
     }
 
-    // generate token
+ 
     const token = jwt.sign(
       { adminId: admin.uuid },
       process.env.JWT_TOKEN,
       { expiresIn: "1h" }
     );
 
-    // send cookie
+
     res.cookie("admin_token", token, {
       httpOnly: true,
-      secure: false, // true in production HTTPS
+      secure: false, 
       sameSite: "lax",
       maxAge: 60 * 60 * 1000
     });
